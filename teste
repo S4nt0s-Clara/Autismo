@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I Don't Smoke - Mitski</title>
+  <style>
+    :root {
+      --vinho: #800033;
+      --preto: #000000;
+      --branco: #FFFFFF;
+    }
+
+    body {
+      background-color: var(--preto);
+      color: var(--branco);
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+
+    header {
+      background-color: var(--vinho);
+      color: var(--branco);
+      padding: 1.5em 1em;
+      text-align: center;
+      border-bottom: 4px solid var(--branco);
+    }
+
+    main {
+      max-width: 600px;
+      margin: 2em auto;
+      padding: 2em;
+      background-color: var(--preto);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(128,0,51,0.2);
+      border: 2px solid var(--vinho);
+    }
+
+    h1, h2 {
+      color: var(--branco);
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      margin-top: 2em;
+      color: var(--vinho);
+    }
+
+    blockquote {
+      background: var(--vinho);
+      color: var(--branco);
+      padding: 1em;
+      border-left: 6px solid var(--branco);
+      margin: 2em 0;
+      font-style: italic;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    a {
+      color: var(--vinho);
+      background: var(--branco);
+      padding: 2px 6px;
+      border-radius: 3px;
+      text-decoration: underline;
+      font-weight: bold;
+      transition: background .2s, color .2s;
+    }
+    a:focus, a:hover {
+      background: var(--vinho);
+      color: var(--branco);
+      outline: 2px solid var(--branco);
+    }
+
+    /* Visually accessible focus style for keyboard navigation */
+    :focus {
+      outline: 2px solid var(--vinho);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 tabindex="0">I Don't Smoke<br><span style="font-size:0.7em;">Mitski</span></h1>
+  </header>
+  <main>
+    <h2 tabindex="0">Sobre a música</h2>
+    <p>
+      "I Don't Smoke" é uma das faixas do álbum <strong>Be the Cowboy</strong> da cantora Mitski. 
+      A música fala sobre identidade, honestidade e os sentimentos conflitantes que nos acompanham.
+    </p>
+
+    <blockquote tabindex="0">
+      I don't smoke<br>
+      Except for when I'm missing you<br>
+      To remember your mouth, how it<br>
+      Tasted, true<br>
+    </blockquote>
+
+    <h2 tabindex="0">Acessibilidade Visual</h2>
+    <ul>
+      <li>Contraste alto entre vinho, preto e branco para facilitar a leitura.</li>
+      <li>Navegação por teclado com foco destacado.</li>
+      <li>Fontes sem serifa e espaçamento confortável.</li>
+    </ul>
+
+    <p>
+      <a href="https://www.mitski.com/" target="_blank" rel="noopener">Site oficial da Mitski</a>
+    </p>
+  </main>
+</body>
+</html>
